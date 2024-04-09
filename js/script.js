@@ -11,4 +11,4 @@ const marker = new AdvancedMarkerElement({
   });
 }
 
-window.addEventListener('load', init);
+initMap();
