@@ -10,8 +10,10 @@ async function initMap(){
   map = new google.maps.Map(document.getElementById('canvas'), {
     center: {lat: 41.834875, lng: -87.628093},
     zoom: 15,
-    mapTypeId: "terrain",
-  }
+    mapTypeId: "google.maps.MapTypeId.SATELLITE,
+		mapTypeControlOptions:{
+		  position: google.maps.ControlPosition.BOTTOM_CENTER
+    }
   );
   
   for (const city in citymap) {
