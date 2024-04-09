@@ -29,4 +29,4 @@ async function initMap(){
   }
 }
 
-initMap();
+window.initMap = initMap;
