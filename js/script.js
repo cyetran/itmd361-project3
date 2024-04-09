@@ -14,7 +14,7 @@ function initMap(){
     mapTypeControlOptions:{
     position: google.maps.ControlPosition.BOTTOM_CENTER
     }
-  );
+  });
   
   for (const city in citymap) {
     // Add the circle for this city to the map.
