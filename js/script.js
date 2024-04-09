@@ -1,7 +1,7 @@
 const citymap = {
   chicago: {
     center: { lat: 41.878, lng: -87.629 },
-    population: 2714856,
+    population: 27148,
   },
 };
 
