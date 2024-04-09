@@ -6,9 +6,8 @@ function initMap(){
 });
 const marker = new AdvancedMarkerElement({
   map,
-  position: accra,
-    });
+  position: { lat: 37.4239163, lng: -122.0947209 },
+  });
 }
 
-initMap();
 window.addEventListener('load', init);
