@@ -13,7 +13,7 @@ async function initMap(){
     mapTypeId: "terrain",
   }
   );
-
+  
   for (const city in citymap) {
     // Add the circle for this city to the map.
     const cityCircle = new google.maps.Circle({
@@ -27,6 +27,10 @@ async function initMap(){
       radius: Math.sqrt(citymap[city].population) * 100,
     });
   }
+   var Marker = new google.maps.Marker({
+      position: { lat: 41.834712, lng: -87.626598},map,
+      title: 'IIT'
+    });
 }
 
 window.initMap = initMap;
