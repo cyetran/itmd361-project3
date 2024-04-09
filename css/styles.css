@@ -90,9 +90,11 @@ h3{
 }
 
 video {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   background-color: black;
+  width: 100%;
   
 }
 
@@ -103,13 +105,19 @@ video {
 }
 
 #doom,#maraud,#steel,#jjk {
-  height: 600px;
-  width: auto;   
+  display: ();
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:20px;
+  width:40%;  
 }
 
 #intru,#king,#malcolmx,#subtle {
-  height: 533px;
-  width: auto;  
+  display: ;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:20px;
+  width:40%;  
 }
 
 #niagara, #gh, #cape{
@@ -120,13 +128,16 @@ video {
 }
 
 #destiny{
-  width: 1000px;
-  height: 500px;
-  display: inline;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #smite {
-  width: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 #chelsea, #ghfb, #bulls, #bears, #sox {
