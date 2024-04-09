@@ -83,7 +83,7 @@ video{
   background-color: black;
   width: 100%;  
 }
-#map{
+#canvas{
   display: block;
   margin: auto;
   width: 100%;
