@@ -1,6 +1,7 @@
 const citymap = {
   chicago: {
     center: { lat: 41.834875, lng: -87.628093},
+    population: 100,
   },
 };
 
@@ -23,7 +24,7 @@ async function initMap(){
       fillOpacity: 0.35,
       map,
       center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].center) * 50,
+      radius: Math.sqrt(citymap[city].population) * 100,
     });
   }
 }
