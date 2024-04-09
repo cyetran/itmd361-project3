@@ -21,6 +21,14 @@ header {
   padding: 40px;
 }
 
+#main{
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #fff2de;
+    box-shadow: 0 0 400px rgba(0, 0, 0, 0.1);
+}
+
 nav ul{
   background-color: #e44f01;
   list-style: none;
