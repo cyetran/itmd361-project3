@@ -102,8 +102,8 @@ video {
   display: block;
   margin: auto;
   width: 100%;
-  height: 500px;
-  border: solid 3px rgb(241, 138, 110);
+  height: 550px;
+  border: solid 5px rgb(241, 138, 110);
   border-radius: 30px; 
 }
 
