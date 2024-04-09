@@ -74,7 +74,8 @@ h3{
 }
 .resume p{
   color: black;
-  font-style: italic;    
+  font-style: italic; 
+  font-family: arial;
 }
 video{
   display: flex;
@@ -93,6 +94,7 @@ video{
 }
 .aboutme p{
   font-style: italic;
+  font-family: arial;
   text-align: center;
   color: black;   
 }
@@ -136,6 +138,7 @@ video{
   text-align: center;
   color: black;
   font-style: italic;
+  font-family: arial;
 }
 footer{
   text-align: center;
