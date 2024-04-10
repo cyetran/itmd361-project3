@@ -3,10 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Hobbies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellefair">
+    <script type ="text/javascript">
+    $(function(){
+      $('.bxslider').bxSlider({
+        mode: 'horizontal',
+        captions: true,
+        slideWidth: 450,
+        slideHeight: 600
+    });
+  });
+    </script>
   </head>
   
   <body class="hobbies">
@@ -33,17 +46,20 @@
     <section id="Reading">
       <h2>Books</h2>
       <h3>Comics/Manga</h3>
-      <img id="doom" src="media/images/doomsday.jpg" alt="doomsday clock cover">
-      <img id="maraud" src="media/images/marauders.jpg" alt="x men marauders cover">
-      <img id="steel" src="media/images/steelball.jpg" alt="jojo bizarre sbr cover">
-      <img id="jjk" src="media/images/jjk8.jpeg" alt="jujutsu kaisen cover">
-      <p><strong>L-R: Doomsday Clock(DC), Marauders(Marvel), Steel Ball Run(Weekly Shōnen Jump), Jujutsu Kaisen(Weekly Shōnen Jump)</strong></p>
+      <div class="bxslider">
+        <div><img src="media/images/doomsday.jpg" title="Doomsday Clock(DC)" /></div>
+        <div><img src="media/images/marauders.jpg" title="Marauders(Marvel)" /></div>
+        <div><img src="media/images/steelball.jpg" title="Steel Ball Run(Weekly Shōnen Jump" /></div>
+        <div><img src="media/images/jjk8.jpeg" title="Jujutsu Kaisen(Weekly Shōnen Jump)" /></div>
+      </div>
       <p>Above are some titles of various comics and mangas that I have read. I definitely enjoy alot of superhero and shonen themes with the various fictional stories I read.</p>
       <h3>Non-Fiction</h3>
-      <img id="intru" src="media/images/artofintrusion.jpg" alt="art of intrusion cover">
-      <img id="king" src="media/images/kwml.jpeg" alt="king warrior magi cover">
-      <img id="malcolmx" src="media/images/malcolmx.jpg" alt="autobio of malcolm x cover">
-      <img id="subtle" src="media/images/subtleart.jpg" alt="subtle art cover">
+       <div class="bxslider">
+        <div><img src="media/images/artofintrusion.jpg" title="Art of Intrusion" /></div>
+        <div><img src="media/images/kwml.jpeg" title="King,Warrior,Magician,Lover" /></div>
+        <div><img src="media/images/malcolmx.jpg" title="The Autobiography of Malcolm X" /></div>
+        <div><img src="media/images/subtleart.jpg" title="The Subtle Art of Not Giving a F*ck" /></div>
+      </div>
       <p>Above are some of the few Non-Fiction books I have read or am currently reading. I enjoy alot of self-helps/introspective books,real life crimes, & historical autobiographies. </p>
     </section>
         

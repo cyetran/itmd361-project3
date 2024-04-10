@@ -5,12 +5,13 @@ const citymap = {
   },
 };
 
+
 var map;
 function initMap(){
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 41.834875, lng: -87.628093},
     zoom: 15,
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
     mapTypeControlOptions:{
     position: google.maps.ControlPosition.BOTTOM_CENTER
     }
@@ -26,12 +27,27 @@ function initMap(){
       fillOpacity: 0.15,
       map,
       center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].population) * 100,
+      radius: Math.sqrt(citymap[city].population) * 50,
     });
   }
-   var Marker = new google.maps.Marker({
+  
+  var infoWindow = new google.maps.InfoWindow({
+      content: '<h3>Draggable Marker</h3><p>Welcome to Illinois Institute of Technology!!</p>'
+    });
+  
+  const pinScaled = new PinElement({
+    scale: 1.5,
+  });
+  var Marker = new google.maps.Marker({
       position: { lat: 41.834712, lng: -87.626598},map,
-      title: 'IIT'
+      animation: google.maps.Animation.BOUNCE,
+      icon: 'media/images/desktopicon.png',
+      content: pinScaled.element,
+      
+    });
+  
+  Marker.addListener('click', function() {
+        infoWindow.open(map, Marker)
     });
 }
 
