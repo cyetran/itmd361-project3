@@ -37,23 +37,14 @@ function initMap(){
   
   var Marker = new google.maps.Marker({
       position: { lat: 41.834712, lng: -87.626598},map,
-      animation: google.maps.Animation.DROP,
+      animation: google.maps.Animation.BOUNCE,
       draggable: true,
     });
-   marker.addListener("click", toggleBounce);
-}
-
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
-  
-  Marker.addListener('click', function() {
+   Marker.addListener('click', function() {
         infoWindow.open(map, Marker)
     });
+}
+
 
 
 window.initMap = initMap;
