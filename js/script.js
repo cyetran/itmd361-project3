@@ -7,7 +7,7 @@ const citymap = {
 
 var map;
 function initMap(){
-  const { Map } = await google.maps.importLibrary("maps");
+  const {Map}  = await google.maps.importLibrary("maps");;
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 41.834875, lng: -87.628093},
