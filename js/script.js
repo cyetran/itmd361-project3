@@ -32,7 +32,7 @@ function initMap(){
   }
   
   var infoWindow = new google.maps.InfoWindow({
-      content: '<h3>Draggable Marker</h3><p>Welcome to Illinois Institute of Technology!!</p>'
+      content: '<p>Welcome to Illinois Institute of Technology!!</p>'
     });
   
   const pinScaled = new PinElement({
@@ -41,9 +41,6 @@ function initMap(){
   var Marker = new google.maps.Marker({
       position: { lat: 41.834712, lng: -87.626598},map,
       animation: google.maps.Animation.BOUNCE,
-      icon: 'media/images/desktopicon.png',
-      content: pinScaled.element,
-      
     });
   
   Marker.addListener('click', function() {
