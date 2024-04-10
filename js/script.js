@@ -43,7 +43,7 @@ function initMap(){
   var Marker = new AdvancedMarketElement({
       position: { lat: 41.834712, lng: -87.626598},map,
       animation: google.maps.Animation.BOUNCE,
-      icon: 'media/images/desktopicon.png'
+      icon: 'media/images/desktopicon.png',
       content: pinScaled.element,
       
     });
