@@ -39,8 +39,9 @@ function initMap(){
       animation: google.maps.Animation.BOUNCE,
       icon: 'media/images/desktopicon.png'
     });
+  
   Marker.addListener('click', function() {
-        infoWindow.open(map, Marker;
+        infoWindow.open(map, Marker)
     });
 }
 
