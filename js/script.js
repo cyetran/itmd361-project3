@@ -8,7 +8,7 @@ const citymap = {
 
 var map;
 function initMap(){
-  const { Map } = await google.maps.importLibrary("maps");
+  const { Map } = await google.maps.importLibrary("map");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
   
   map = new google.maps.Map(document.getElementById('map'), {
