@@ -5,8 +5,10 @@ const citymap = {
   },
 };
 
-var map;
+
 function initMap(){
+  const { map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 41.834875, lng: -87.628093},
     zoom: 15,
@@ -34,10 +36,15 @@ function initMap(){
       content: '<h3>Draggable Marker</h3><p>Welcome to Illinois Institute of Technology!!</p>'
     });
   
-  var Marker = new google.maps.Marker({
+  const pinScaled = new PinElement({
+    scale: 1.5,
+  });
+  var Marker = new AdvancedMarketElement({
       position: { lat: 41.834712, lng: -87.626598},map,
       animation: google.maps.Animation.BOUNCE,
       icon: 'media/images/desktopicon.png'
+      content: pinScaled.element,
+      
     });
   
   Marker.addListener('click', function() {
