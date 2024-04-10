@@ -54,6 +54,6 @@ function toggleBounce() {
   Marker.addListener('click', function() {
         infoWindow.open(map, Marker)
     });
-}
+
 
 window.initMap = initMap;
