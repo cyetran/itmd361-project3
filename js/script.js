@@ -8,8 +8,6 @@ const citymap = {
 
 var map;
 function initMap(){
-  
-  
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 41.834875, lng: -87.628093},
     zoom: 15,
@@ -29,7 +27,7 @@ function initMap(){
       fillOpacity: 0.15,
       map,
       center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].population) * 100,
+      radius: Math.sqrt(citymap[city].population) * 50,
     });
   }
   
@@ -40,7 +38,7 @@ function initMap(){
   const pinScaled = new PinElement({
     scale: 1.5,
   });
-  var Marker = new AdvancedMarketElement({
+  var Marker = new google.maps.Marker({
       position: { lat: 41.834712, lng: -87.626598},map,
       animation: google.maps.Animation.BOUNCE,
       icon: 'media/images/desktopicon.png',
