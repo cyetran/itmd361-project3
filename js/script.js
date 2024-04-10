@@ -4,8 +4,8 @@ const citymap = {
     population: 100,
   },
 };
-const {Map}  = await google.maps.importLibrary("maps");
-const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+const Map  = await google.maps.importLibrary("maps");
+const AdvancedMarkerElement  = await google.maps.importLibrary("marker");
 
 var map;
 function initMap(){
