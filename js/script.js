@@ -35,9 +35,6 @@ function initMap(){
       content: '<p>Welcome to Illinois Institute of Technology!!</p>'
     });
   
-  const pinScaled = new PinElement({
-    scale: 1.5,
-  });
   var Marker = new google.maps.Marker({
       position: { lat: 41.834712, lng: -87.626598},map,
       animation: google.maps.Animation.BOUNCE,
