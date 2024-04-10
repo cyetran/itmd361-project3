@@ -105,20 +105,6 @@ video{
   text-align: center;
   color: black;   
 }
-#doom,#maraud,#steel,#jjk{
-  display: ();
-  margin-left: auto;
-  margin-right: auto;
-  border-radius:20px;
-  width:40%;  
-}
-#intru,#king,#malcolmx,#subtle{
-  display: ;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius:20px;
-  width:40%;  
-}
 #niagara, #gh, #cape{
   width: 800px;
   height: auto;
