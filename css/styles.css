@@ -77,11 +77,16 @@ h3{
   font-style: italic; 
   font-family: arial;
 }
+.bxslider {
+  margin: auto;
+  border: solid 5px rgb(241, 138, 110);
+  border-radius: 20px; 
+}
 video{
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+  background-color: transparent;
   width: 100%;  
 }
 #map{
